@@ -29,13 +29,13 @@ echo $d;
 $value = 10;
 $value = $value + 5;
 $value += 5;
-echo $value;
+echo $value , "<br>";
 $value -= 5;
-echo $value;
+echo $value , "<br>";
 $value *= 5;
-echo $value;
+echo $value , "<br>";
 $value /= 5;
-echo $value;
+echo $value , "<br>";
 
 ?>
 

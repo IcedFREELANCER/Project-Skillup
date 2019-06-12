@@ -90,6 +90,58 @@ ksort($a);
 krsort($a);
 
 
+#переходы по массиву
+$a = [];
+$a[1] = "PHP";
+$a[2] = "HTML";
+$a[3] = "CSS";
+echo current($a) . "<br>";
+echo next($a) . "<br>";
+echo next($a) . "<br>";
+echo prev($a) . "<br>";
+echo end($a) . "<br>";
+echo reset($a) . "<br>";
+echo in_array("PHP", $a);
+
+
+
+#функция implode + explode ^^^
+$str = implode (",",$a);
+
+$a = explode (",",$str);
+
+
+
+#делает из ключей переменные __
+$a ['one'] = "PHP";
+$a ['two'] = "HTML";
+$a ['three'] = "CSS";
+extract ($a);
+
+#обратная функция... ^^
+$one = "PHP";
+$two = "HTML";
+$three = "CSS";
+compact ("one" , "two" , "three");
+
+
+#объединение массивов
+$a1[] = 1;
+$a1[] = 2;
+$a2[] = 3;
+$a2[] = 4;
+array_merge ($a1,$a2);
+
+#----
+$a1[] = 'PHP';
+$a1[] = 'HTML';
+$a1[] = 'CSS';
+$a2[] = 'PHP';
+$a2[] = 'PHPr,2';
+$r = array_diff ($a1,$a2);
+$r2 = array_intersect($a1,$a2);
+array_sum ($arr);
+array_unique($arr);
 
 
 

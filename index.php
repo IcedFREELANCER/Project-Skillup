@@ -50,6 +50,49 @@ switch ($a) {
         break;
 }
 
+
+$a = 40;
+$b = 50;
+$r = $a = 40 ? "+" : "-";
+echo $r;
+$r = $b = 60 ? "+" : "-";
+echo $r;
+
+#циклы
+$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$max = count($arr);
+foreach ($arr as $key => $value) {
+    echo $value . "<br>";
+
+}
+
+#примеры ф-ций
+substr("hello world", 6, 5);
+
+mb_strpos("hello world", "world");
+
+trim(" 123456   ");
+
+trim(" ", ",");
+
+
+#массивы
+$a = []; #обнуление предидущей переменной
+$a[1] = "PHP";
+$a[2] = "HTML";
+$a[3] = "CSS";
+sort($a);
+print_r($a);
+
+#еще сортировка
+rsort($a);
+ksort($a);
+krsort($a);
+
+
+
+
+
 ?>
 
 </body>

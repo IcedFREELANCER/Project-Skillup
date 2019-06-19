@@ -13,7 +13,7 @@
 
 function f1($value)
 {
-    if($value == 1) {
+    if ($value == 1) {
         return "1";
     }
 
@@ -23,14 +23,7 @@ function f1($value)
 echo f1(55);
 
 
-
-
-
 ?>
-
-
-
-
 
 
 </body>

@@ -8,40 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-
 <?php
-
-function f1($value)
-{
-    if ($value == 1) {
-        return "1";
-    }
-
-    return f1($value - 1) . $value;
-}
-
-echo f1(55);
-
-
-echo f2(123);
-
-function f2($value)
-{
-    if ($value < 10) {
-        return $value;
-    }
-    return $value % 10 + f2((int)($value / 10));
-}
+include "content.html";
 
 ?>
 
-
-<?php
-
-
-
-
-?>
 
 </body>
 </html>

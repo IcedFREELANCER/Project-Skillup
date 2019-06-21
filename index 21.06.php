@@ -9,7 +9,11 @@
 </head>
 <body>
 <?php
-include "content.html";
+include "content.php";
+
+echo $a;
+echo $b;
+
 
 ?>
 

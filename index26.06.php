@@ -1,13 +1,13 @@
 <?php
 $value = $_COOKIE['name'];
 if ($value == '') {
-    echo 'Privet vsem';
+    echo 'Privet';
 } else {
     echo "Privet $value";
 }
 
 
-setcookie('name', 'Vasya, time() + 20);
+setcookie('name', 'Vasya', time() + 20);
 
 
 

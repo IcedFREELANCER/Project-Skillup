@@ -1,15 +1,10 @@
-Car.php
-
 <?php
+require_once 'CarInterface.php';
 
-class Car
+abstract class Car implements CarInterface
 {
-    public $brand = "BMW";
     public $speed = 20;
     public $temp = 20;
 
-    public function move()
-    {
-        $this->temp += 5;
-    }
+    abstract public function move();
 }

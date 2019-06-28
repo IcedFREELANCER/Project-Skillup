@@ -3,8 +3,9 @@ require_once 'CarInterface.php';
 
 abstract class Car implements CarInterface
 {
-    protected $speed = 20;
     public $temp = 20;
+    protected $speed = 20;
+    private $kilometers = 1000;
 
     abstract public function move();
 
@@ -12,6 +13,7 @@ abstract class Car implements CarInterface
     {
         $this->speed = 30;
         $this->move();
+        $this->kilometers += $this->speed;
     }
 
     public function getCurrentSpeed()

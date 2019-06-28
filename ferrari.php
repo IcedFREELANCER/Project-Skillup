@@ -9,5 +9,6 @@ class Ferrari extends Car
     {
         $this->speed += 30;
         $this->temp += 5;
+        $this->kilometers;
     }
 }
